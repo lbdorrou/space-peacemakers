@@ -5,7 +5,7 @@
 
 <div class="game-board" (click)="addNiceMessage()">
   <div class="nice-aliens">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Space_invaders_alien.svg">
+   <img src="https://raw.githubusercontent.com/lbdorrou/space-peacemakers/master/src/assets/nice-alien.svg?sanitize=true">
   </div>
   <div class="nice-messages-container">
      <div class="nice-message" [class.right]="message.rightSide" *ngFor="let message of niceMessages; let i = index">
