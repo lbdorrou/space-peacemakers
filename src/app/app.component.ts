@@ -10,9 +10,14 @@ export class AppComponent  {
 
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) { 
-    if(event.code) {
+    if(event.code == "Space") {
       this.addNiceMessage();
     }
+  }
+
+  @HostListener('click', ['$event.target'])
+  onClick(btn) {
+    this.addNiceMessage();
   }
   
   messageTimeout = 2000;

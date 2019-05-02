@@ -3,10 +3,15 @@
 	<div class="help-text">Press <span>Space</span> or <span>Tap the Screen</span> to make friends</div>
 </div>
 
-<div class="game-board" (click)="addNiceMessage()">
-  <div class="nice-aliens">
-   <img src="https://raw.githubusercontent.com/lbdorrou/space-peacemakers/master/src/assets/nice-alien.svg?sanitize=true">
+<div class="nice-aliens" >
+    <div class="nice-aliens-row" *ngFor="let number of [0,1]">
+      <img *ngFor="let number of [0,1,2,3,4]" src="https://raw.githubusercontent.com/lbdorrou/space-peacemakers/master/src/assets/nice-alien.svg?sanitize=true">
+    </div>
+
   </div>
+
+<div class="game-board">
+  
   <div class="nice-messages-container">
      <div class="nice-message" [class.right]="message.rightSide" *ngFor="let message of niceMessages; let i = index">
       {{message.name}}
