@@ -1,0 +1,20 @@
+<div class="header">
+	<div class="title">SPACE PEACEMAKERS</div>
+	<div class="help-text">Press <span>Space</span> or <span>Tap the Screen</span> to make friends</div>
+</div>
+
+<div class="game-board" (click)="addNiceMessage()">
+  <div class="nice-aliens">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Space_invaders_alien.svg">
+  </div>
+  <div class="nice-messages-container">
+     <div class="nice-message" [class.right]="message.rightSide" *ngFor="let message of niceMessages; let i = index">
+      {{message.name}}
+    </div>
+  </div>
+ 
+</div>
+
+<div class="footer">
+  Made in a hurry by <a href="https://twitter.com/DoMoreDorrough">@DoMoreDorrough</a>
+</div>

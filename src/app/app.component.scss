@@ -1,0 +1,60 @@
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Space Mono', monospace;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.help-text {
+  padding: 10px 0;
+}
+
+.help-text span{
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: black;
+
+}
+
+.footer, .header {
+  background-color: black;
+  padding: 10px;
+}
+
+
+.game-board {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nice-aliens {
+  flex: 1 1;
+  
+
+}
+
+.nice-messages-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nice-message {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  align-self: flex-start;
+
+  &.right {
+    align-self: flex-end; 
+  }
+}

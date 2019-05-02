@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono');
+
+html {
+    height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(to bottom,#000000 0%, #09285e 100%);
+  color: white;
+
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+    
+a, a:visited {color: #00aced;}  
+a:hover, a:active {color: #1dcaff;}  
+
+
